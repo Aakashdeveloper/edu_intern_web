@@ -1,0 +1,18 @@
+[
+    {
+        "id":1,
+        "category": "Fashion"
+    },
+    {
+        "id":2,
+        "category":"Electronics"
+    },
+    {
+        "id":3,
+        "category":"Essentials"
+    },
+    {
+        "id":4,
+        "category": "Footwear"
+    }
+]
