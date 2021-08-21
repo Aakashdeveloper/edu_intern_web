@@ -31,3 +31,37 @@ githistory
 //////HTML//////
 Block Level
 Inline 
+
+///////Css///////
+Inline 
+StyleTag 
+StyleSheet
+
+Inline > StyleTag > StyleSheet
+
+<h1>Hii</h1>
+
+{
+   color:red;
+   font-size:20px; 
+   text-align:center;
+   margin:1%
+}
+
+inline{
+    color:red;
+    font-size:20px;
+}
+
+StyleTag{
+    color:orange;
+    text-align:center;
+    font-size:40px;
+}
+
+StyleSheet{
+    color:olive;
+    text-align:right;
+    font-size:40px;
+    margin:1%
+}
