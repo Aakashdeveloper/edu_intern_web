@@ -1,0 +1,34 @@
+body{
+    margin: auto;
+}
+#search{
+    height:500px;
+    width:100%;
+    background-image:url('image/food-wallpaper.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-size: 100% 500px;
+}
+
+#QuickSearch{
+    height:500px;
+    width:100%;
+    border:5px solid rebeccapurple
+}
+
+#brand{
+    display: inline-block;
+    margin-left:5%;
+    font-size:30px;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.social{
+    display: inline-block;
+    margin-left:75%
+}
+
+.socialIcon{
+    height:50px;
+    width:50px
+}

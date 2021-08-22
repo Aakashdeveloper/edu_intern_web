@@ -1,0 +1,37 @@
+h1{
+    color:darkgreen;
+    text-align: center;
+}
+.floatdiv{
+    height:200px;
+    width:32%;
+    background-color:rgb(19, 138, 185);
+    float:left;
+    margin-left:1%;
+    overflow: scroll;
+    color:white
+}
+.mypurple{
+    background-color:rgb(211, 36, 211)
+}
+
+.mygreen{
+    background-color:rgb(84, 124, 24)
+}
+
+#imageConatiner{
+    height:250px;
+    width:100%;
+    border:2px solid rebeccapurple;
+    text-align:center;
+}
+.blockdiv{
+    height:200px;
+    width:22%;
+    background-color:skyblue;
+    display:inline-block;
+    margin:1%
+}
+#mainBlock{
+    display: inline-block
+}

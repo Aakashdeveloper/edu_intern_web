@@ -65,3 +65,13 @@ StyleSheet{
     font-size:40px;
     margin:1%
 }
+
+h1 > It will target all the h1 tag of page unless if they don't have any other property
+id > To target any unique element
+class > to target group of element
+
+solid
+dotted
+dashed
+double
+groove
