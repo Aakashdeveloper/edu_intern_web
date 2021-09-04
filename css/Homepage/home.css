@@ -10,12 +10,6 @@ body{
     background-size: 100% 500px;
 }
 
-#QuickSearch{
-    height:500px;
-    width:100%;
-    border:5px solid rebeccapurple
-}
-
 #brand{
     display: inline-block;
     margin-left:5%;
@@ -31,4 +25,111 @@ body{
 .socialIcon{
     height:50px;
     width:50px
+}
+
+#logo{
+    height:150px;
+    width:150px;
+    background-color:white;
+    margin-left:45%;
+    margin-top:4%;
+    border-radius: 50%;
+    font-size:110px;
+    text-align: center;
+    color:red
+}
+
+#logo > span{
+    margin-top:0%;
+    margin-left:-2%;
+    position: absolute;
+    color:#b05b3a
+}
+
+#heading{
+    color:white;
+    font-size:30px;
+    text-align: center;
+    margin: auto;
+    margin-top:2%;
+    background-color:rgb(60, 168, 231);
+    width:30%;
+}
+
+#dropdown{
+    height:60px;
+    width:40%;
+    margin: auto;
+    margin-top:2%;
+}
+
+select{
+    height: 60px;
+    width:49%;
+    font-size:20px
+}
+
+#QuickSearch{
+    width:80%;
+    margin-left:10%;
+    margin-top: 2%;
+}
+
+#QuickHeading{
+    color:#192f60;
+    font-size:30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    display: block;
+    margin-left: 2%;
+}
+
+#QuickSubHeading{
+    color:gray;
+    font-size:20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    line-height: 2;
+    margin-left: 2%;
+}
+
+.tileContainer{
+    height:180px;
+    width:30%;
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 2%;
+    box-shadow:10px 15px 20px rgb(155, 231, 241);
+}
+
+footer{
+    text-align: center;
+    font-size:30px;
+}
+
+.tileComponent1{
+    width:46%;
+    float:left;
+}
+
+.tileComponent1 > img{
+    width:100%;
+    height:180px
+}
+.tileComponent2{
+    width:46%;
+    float:left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.componentHeading{
+    color:#6b9d03;
+    font-size:25px;
+    font-weight:bold;
+}
+
+.componentSubHeading{
+    color:gray;
+    font-size:18px;
 }
