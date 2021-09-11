@@ -75,3 +75,19 @@ dotted
 dashed
 double
 groove
+
+
+bootstrap3
+grid Basic
+xs < 768px
+sm > 768px
+md > 992px
+lg > 1200px
+https://getbootstrap.com/docs/3.3/components/
+
+
+bootstrap4
+bootstrap5
+
+12/4
+3

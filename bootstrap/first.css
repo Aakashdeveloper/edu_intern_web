@@ -1,0 +1,47 @@
+.jumbotron{
+    background-image: url('food-wallpaper.png');
+    color:white !important;
+}
+
+#first{
+    height:200px;
+    background-color: rgb(147, 240, 240);
+   
+}
+#second{
+    height:200px;
+    background-color: rgb(241, 231, 138);
+
+}
+#third{
+    height:200px;
+    background-color: rgb(237, 147, 240);
+   
+}
+#four{
+    height:200px;
+    background-color: rgb(240, 147, 147);
+
+}
+#five{
+    height:200px;
+    background-color: rgb(192, 240, 147);
+
+}
+#six{
+    height:200px;
+    background-color: rgb(114, 91, 243);
+}
+
+.glyphicon-trash{
+    font-size:20px;
+    color:red
+}
+.glyphicon-edit{
+    font-size:20px;
+    color:green
+}
+.glyphicon-glass{
+    font-size:20px;
+    color:rgb(55, 208, 228)
+}

@@ -62,3 +62,16 @@ a{
     border: 5px solid gray;
     margin-top: 2%;
 }
+
+@media screen and (max-width:600px){
+    body{
+        background-color:rgb(240, 162, 207)
+    }
+    #filter{
+       float: none;
+       height: 200px;
+       width:65%;
+       margin-left: 5%;
+       margin-bottom: 2%;
+    }
+}

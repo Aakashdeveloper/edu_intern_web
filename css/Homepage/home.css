@@ -187,6 +187,7 @@ footer{
 .componentHeading > a{
     text-decoration: none;
     color:#6b9d03;
+    cursor: pointer;
 }
 
 @media screen and (max-width:1600px){
