@@ -45,3 +45,21 @@
     font-size:20px;
     color:rgb(55, 208, 228)
 }
+
+.panel-danger{
+  border-color:black
+}
+
+.panel-heading{
+    background-color: rgb(161, 146, 230) !important;
+    color:white !important;
+}
+
+li{
+    list-style-type: none;
+}
+
+.simage{
+    height:400px !important;
+    width:100%
+}
