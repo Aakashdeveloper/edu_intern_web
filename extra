@@ -91,3 +91,33 @@ bootstrap5
 
 12/4
 3
+
+
+// first time
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/stockmarket.git
+git push -u origin master
+
+// next all time 
+git add .
+git commit -m "first commit"
+git push
+
+/////////
+dummy url
+/////////
+*Install NodeJs (https://nodejs.org/en/)
+
+^One Time^
+##Windows##
+> open cmd as administrator
+> npm i -g json-server
+> close cmd
+
+##Mac/Linux##
+> open terminal
+> sudo npm i -g json-server
+>>>>>>>><<<<<<<<<
+json-server --watch employee.json --port 8500

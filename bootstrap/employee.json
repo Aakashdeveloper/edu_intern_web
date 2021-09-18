@@ -1,0 +1,60 @@
+{
+  "employee": [
+    {
+      "eid": "A9SI1109",
+      "fname": "Aakash",
+      "lname": "Handa",
+      "email": "akki@gmail.com",
+      "password": "12345678",
+      "id": 1
+    },
+    {
+      "eid": "A9SI1109",
+      "fname": "Nikita",
+      "lname": "Sharma",
+      "email": "nikki@gmail.com",
+      "password": "12345678",
+      "id": 2
+    },
+    {
+      "eid": "A9SI1109",
+      "fname": "",
+      "lname": "",
+      "email": "a@a.com",
+      "password": "",
+      "date": "2021-09-24",
+      "file": "Artboard 1 copy 2.png",
+      "gender": "female",
+      "exp": "2",
+      "id": 3
+    },
+    {
+      "eid": "A9SI1109",
+      "fname": "",
+      "lname": "",
+      "email": "a@a.com",
+      "password": "",
+      "date": "",
+      "file": "",
+      "gender": "female",
+      "language": [
+        "JavaScript",
+        "React"
+      ],
+      "exp": "1",
+      "id": 4
+    },
+    {
+      "eid": "A9SI1109",
+      "fname": "",
+      "lname": "",
+      "email": "a@a.com",
+      "password": "",
+      "date": "",
+      "file": "",
+      "comment": "vdkvdkkjkfj vjkf  kdmckdmkjc",
+      "exp": "1",
+      "id": 5
+    }
+  ]
+}
