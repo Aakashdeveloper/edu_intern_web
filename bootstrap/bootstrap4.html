@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+            .border{
+                height:100px;
+                width:100px;
+                display:inline-block;
+                margin: 1%;
+            }
+            .simage{
+                height:400px;
+                width:100%
+            }
+            .card{
+                display:inline-block;
+                margin-left:5%
+            }
+            .card-img-top{
+                height:200px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="text-muted">This is P Tag</div>
+            <div class="text-primary">This is P Tag</div>
+            <div class="text-secondary">This is P Tag</div>
+            <div class="text-success">This is P Tag</div>
+            <div class="text-warning">This is P Tag</div>
+            <div class="text-danger">This is P Tag</div>
+            <div class="text-info">This is P Tag</div>
+            <div class="text-dark">This is P Tag</div>
+            <div class="text-light">This is P Tag</div>
+            <hr/>
+            <button class="btn btn-primary">Click</button>
+            <button class="btn btn-secondary">Click</button>
+            <button class="btn btn-success">Click</button>
+            <button class="btn btn-warning">Click</button>
+            <button class="btn btn-danger">Click</button>
+            <button class="btn btn-info">Click</button>
+            <button class="btn btn-light">Click</button>
+            <button class="btn btn-dark">Click</button>
+            <button class="btn btn-dark btn-sm">Click</button>
+            <button class="btn btn-dark btn-md">Click</button>
+            <button class="btn btn-dark btn-lg">Click</button>
+            <button class="btn btn-dark btn-xl">Click</button>
+            <hr/>
+            <button class="btn btn-outline-primary">Click</button>
+            <button class="btn btn-outline-secondary">Click</button>
+            <button class="btn btn-outline-success">Click</button>
+            <button class="btn btn-outline-warning">Click</button>
+            <button class="btn btn-outline-danger">Click</button>
+            <button class="btn btn-outline-info">Click</button>
+            <button class="btn btn-outline-light">Click</button>
+            <button class="btn btn-outline-dark">Click</button>
+            <hr/>
+            <span class="spinner-border text-muted"></span>
+            <span class="spinner-border text-primary"></span>
+            <span class="spinner-border text-secondary"></span>
+            <span class="spinner-border text-success"></span>
+            <span class="spinner-border text-warning"></span>
+            <span class="spinner-border text-danger"></span>
+            <span class="spinner-border text-info"></span>
+            <span class="spinner-border text-dark"></span>
+            <span class="spinner-grow text-muted"></span>
+            <span class="spinner-grow text-primary"></span>
+            <span class="spinner-grow text-secondary"></span>
+            <span class="spinner-grow text-success"></span>
+            <span class="spinner-grow text-warning"></span>
+            <span class="spinner-grow text-danger"></span>
+            <span class="spinner-grow text-info"></span>
+            <span class="spinner-grow text-dark"></span>
+            <hr/>
+            <form>
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="mybutton"/>
+                    <label class="custom-control-label" for="mybutton">Toogle Me</label>
+                </div>
+                <div>
+                    <label for="range">Select Range</label>
+                    <input type="range" class="custom-range" id="range"/>
+                   
+                </div>
+            </form>
+            <hr/>
+            <span class="border border-dark bg-success"></span>
+            <span class="border border-info bg-secondary"></span>
+            <span class="border border-warning"></span>
+            <span class="border border-info bg-danger"></span>
+            <!--<img src="food-wallpaper.png" class="img-fluid"/>-->
+            <hr/>
+            <div id="mySlider" class="carousel slide" data-ride="carousel" >
+                <ol class="carousel-indicators">
+                    <li data-target="#mySlider" data-slide-to="0"></li>
+                    <li data-target="#mySlider" data-slide-to="1"></li>
+                    <li data-target="#mySlider" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" >
+                    <div class="carousel-item active">
+                        <img src="manali.jpg" class="simage"/>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="waterfall.jpg" class="simage"/>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="food-wallpaper.png" class="simage"/>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#mySlider" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#mySlider" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            <hr/>
+            <img src="london.jpeg" alt="london"class="rounded-circle mx-auto d-block"/>
+            <hr/>
+            <div class="card" style="width:300px">
+                <img class="card-img-top" src="food-wallpaper.png"/>
+                <div class="card-body">
+                    <h4 class="card-title">Spanish</h4>
+                    <p class="card-text">Food from Spain</p>
+                    <p>Spanish food is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.</p>
+                    <button class="btn btn-info">Details</button>
+                </div>
+            </div>
+            <div class="card" style="width:300px">
+                <img class="card-img-top" src="manali.jpg"/>
+                <div class="card-body">
+                    <h4 class="card-title">Manali</h4>
+                    <p class="card-text">Food from Spain</p>
+                    <p>Manali food is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.</p>
+                    <button class="btn btn-info">Details</button>
+                </div>
+            </div>
+            <div class="card" style="width:300px">
+                <img class="card-img-top" src="london.jpeg"/>
+                <div class="card-body">
+                    <h4 class="card-title">London</h4>
+                    <p class="card-text">Food from Spain</p>
+                    <p>London food is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.</p>
+                    <button class="btn btn-info">Details</button>
+                </div>
+            </div>
+            <hr/>
+            <div class="card" style="width:93%">
+                <img class="card-img-top" src="london.jpeg"/>
+                <div class="card-body">
+                    <h4 class="card-title">London</h4>
+                    <p class="card-text">Food from Spain</p>
+                    <p>London food is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.</p>
+                    <button class="btn btn-info">Details</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

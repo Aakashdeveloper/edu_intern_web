@@ -79,7 +79,7 @@ groove
 
 bootstrap3
 grid Basic
-xs < 768px
+col-xs < 768px
 sm > 768px
 md > 992px
 lg > 1200px
@@ -87,7 +87,20 @@ https://getbootstrap.com/docs/3.3/components/
 
 
 bootstrap4
+col- <576px
+col-sm >576px
+col-md > 768px
+col-lg >992px
+col-xl >1200px
+
+
 bootstrap5
+xs < 576px
+sm > 576px
+md > 768px
+lg > 992px
+xl > 1200px
+xxl> 1400
 
 12/4
 3
