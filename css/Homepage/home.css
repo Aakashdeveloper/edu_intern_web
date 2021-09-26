@@ -323,3 +323,15 @@ footer{
         margin-left:-8%;
     }
 }
+
+
+#coupons{
+    height:400px;
+    width:700px;
+    background-color:olive; 
+    position: absolute;
+    margin-left:28%;
+    margin-top:4%;
+    border: 2px groove black;
+    display:none
+}

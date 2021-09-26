@@ -3,9 +3,16 @@
         <title>EduMato</title>
         <link href="image/food-wallpaper.png" rel="icon"/>
         <link href="home.css" rel="stylesheet" type="text/css"/>
+        <script src="home.js"></script>
     </head>
     <body>
         <div id="search">
+            <div id="coupons">
+                <button onClick="hidediv()">
+                    Close
+                </button>
+                
+            </div>
             <div id="header">
                 <div id="brand">
                     <span>EduMato</span>
@@ -130,5 +137,8 @@
         <footer>
             <span>&copy; Edureka 2021</span>
         </footer>
+        <script>
+            window.onload=showdiv();
+        </script>
     </body>
 </html>

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <script src="calc.js"></script>
+        <link rel="stylesheet" href="calc.css"/>
+    </head>
+    <body>
+       
+        <div id="coupons">
+            <button onclick="hidediv()">Hide</button>
+        </div>
+        <center> 
+            <input placeholder="first...." id="first" name="first"/>
+            <input placeholder="second...." id="second" name="second"/>
+            <br/>
+            <button onclick="Add()">Add</button>
+            <button onclick="Sub()">Sub</button>
+            <br/>
+            <p class="output">Output</p>
+            <!--<button onclick="showdiv()">Show</button>-->
+           
+        </center>
+        <script>
+            window.onload = showdiv();
+        </script>
+    </body>
+</html>

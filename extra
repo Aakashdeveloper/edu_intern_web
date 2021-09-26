@@ -134,3 +134,9 @@ dummy url
 > sudo npm i -g json-server
 >>>>>>>><<<<<<<<<
 json-server --watch employee.json --port 8500
+
+
+//////target/////
+id (unique)
+Class (common)
+Tag (h1,p,a)
