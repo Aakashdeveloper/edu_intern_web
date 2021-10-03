@@ -1,4 +1,40 @@
-function Add(){
+function calc(opt){
+    var a = document.getElementById('first').value;
+    var b = document.getElementById('second').value;
+    var output = document.getElementsByClassName('output')[0];
+    var out;
+    if(a.trim().length>0 && b.trim().length>0){
+        a = a.replace(/ /g,'');
+        b = b.replace(/ /g,'');
+        if(isNaN(a) || isNaN(b)){
+            out = `Please Enter Valid Value`
+        }else{
+            if(opt == "Add"){
+                out = Number(a)+Number(b);
+                out = `Sum of number is ${out}`
+            }else{
+                out = Number(a)-Number(b);
+                out =`Sub of number is ${out}`
+            }
+        }
+    }else{
+        out = `Please Enter Value`
+    }
+    
+    output.innerText = out
+}
+
+
+function backspace(){
+    var a = document.getElementById('first').value;
+    a = a.replace(/ /g,'');
+    a = a.slice(0,-1)
+    document.getElementById('first').value=a
+}
+
+
+
+/*function Add(){
     var a = document.getElementById('first').value;
     var b = document.getElementById('second').value;
     var out = Number(a)+Number(b);
@@ -21,4 +57,4 @@ var showdiv = () => {
 function hidediv(){
     var mydiv = document.getElementById('coupons');
     mydiv.style.display="none"
-}
+}*/
