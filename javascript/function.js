@@ -31,7 +31,6 @@ var add = function(a,b){
 }
 
 //es6
-
 var add = (a,b) => { return a+b }
 add(3,5)
 
