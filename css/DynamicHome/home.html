@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>EduMato</title>
+        <link href="image/food-wallpaper.png" rel="icon"/>
+        <link href="home.css" rel="stylesheet" type="text/css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="home.js"></script>
+    </head>
+    <body>
+        <div id="search">
+            <div id="header">
+                <div id="brand">
+                    <span>EduMato</span>
+                </div>
+                <div class="social">
+                    <a href="www.facebook.com">
+                        <img src="image/facebook.png" class="socialIcon"/>
+                    </a>
+                    <a href="www.instagram.com">
+                        <img src="image/insta.png" class="socialIcon"/>
+                    </a>
+                </div>
+                <hr/>
+                <!--logo-->
+                <div id="logo">
+                    <span>e!</span>
+                </div>
+                <div id="heading">
+                    Find Thé Bešt Plače Nêär Yoü
+                </div>
+                <div id="dropdown">
+                    <select id="city" onChange="getHotels()">
+                       <option value="">----SELECT YOUR CITY----</option>
+                    </select>
+                    <select id="hotels">
+                        <option value="">----SELECT YOUR Hotel----</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id="QuickSearch">
+            <span id="QuickHeading">
+                Quick Searches
+            </span>
+            <span id="QuickSubHeading">
+                Discover Restaurants By Type
+            </span>
+            <div class="mainTileContainer">
+            </div>
+        </div>
+        <hr/>
+        <footer>
+            <span>&copy; Edureka 2021</span>
+        </footer>
+        <script>
+            window.onload=getCity();
+            window.onload=QuickSearch();
+        </script>
+    </body>
+</html>
