@@ -201,3 +201,15 @@ isNaN(true)
 false
 isNaN('true')
 true
+
+
+//truthy falsy
+truthy
+ # any number weather +ve or -ve except 0 is truthy
+ # any string is truthy
+ # true
+
+Falsy
+ # 0
+ # false
+ # null and undefined
