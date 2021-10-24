@@ -71,6 +71,11 @@
             "name":"BPL",
             "logo":"https://i.ibb.co/bBTq3qW/bpl.png",
             "payload":{}
+        },
+        {
+            "id":13,
+            "name":"HUL",
+            "logo":"https://img.indiefolio.com/1200x630/filters:format(webp):fill(transparent)/project/thumb/bdeeb11fac9bc55acbd3a9685dbc0a6a.png"
         }
     ]
 }
