@@ -101,3 +101,17 @@ Array.isArray(a)
 false
 Array.isArray(b)
 true
+
+
+var a  = ['Delhi', 'Mumbai', 'Hongkong', 'Venice', 'Nice', 'Amsterdam', 'London', 'Dubai']
+a.indexOf('Delhi')
+0
+
+a.indexOf('Amsterdam')
+5
+
+a.indexOf('Helsinki')
+-1
+
+a.indexOf('Pune')
+-1
