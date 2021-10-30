@@ -150,3 +150,50 @@ stocksapp
 
 https://api.openweathermap.org/data/2.5/forecast/daily?lat=30.7333148&lon=76.7794179&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29
 http://api.openweathermap.org/data/2.5/forecast/daily?q=Delhi&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29
+
+
+NodeJs>>
+Node is single threaded, Async, Nonblocking I/O
+
+convert code in byte
+
+code
+||
+\/
+machine
+||
+\/
+byte
+
+code
+||
+\/
+byte
+
+npm
+> node package manager
+
+//////////
+package.json
+//////
+> Entry point to application
+> metadata > Description,version,name,author
+> script (start,test,build)
+> packages
+
+>>>>><<<<<<
+Step to generate package.json
+>>>>><<<<<<
+*NodeJs must be installed in our system
+> open cmd/terminal
+> navigate to the folder
+> npm init
+> answer all question
+> type "yes"
+
+>>>>><<<<<<
+Step to install packages
+>>>>><<<<<<
+> open cmd/terminal
+> navigate to the folder
+> npm i packagename

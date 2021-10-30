@@ -35,7 +35,7 @@ for(i=0;i<unique.length;i++){
     }
 
     // divide total rating by counter
-    var outRating = Number(outRating)/count;
+    outRating = Number(outRating)/count;
     var myobj = {}
     myobj.restaurant = unique[i];
     myobj.avg = outRating
