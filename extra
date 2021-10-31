@@ -197,3 +197,29 @@ Step to install packages
 > open cmd/terminal
 > navigate to the folder
 > npm i packagename
+
+> local dependencies
+# local to the folder
+# used in same folder
+# do not need admin access
+
+> global dependencies
+# install in your system(laptop)
+# used for any application
+# only those package that help to
+    start, build ,test application
+# Need admin access
+
+///// step to install global packages /////
+>>>Window<<<
+> open cmd as administrator
+> npm i -g package name
+> close cmd
+
+>>>Mac/Linux<<<
+> open terminal
+> sudo npm i -g package name
+> close terminal
+
+
+> npm i -g nodemon
