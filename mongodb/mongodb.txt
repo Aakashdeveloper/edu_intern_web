@@ -1,0 +1,84 @@
+mongodb
+> is a no sequal database save
+> save data in json format
+> it help to save unstructure data
+
+| Roll No | Hindi | English | Computer |
+-------------------------------------------
+|  1      |  80   |        |           |
+|  2      |       |  80    |           |
+|  3      |  90   |        |           |
+|  4      | 70    |        |    90     |
+
+
+structure
+| Date  | Account | AmountWt | balance |
+
+[
+    {
+        rollNo:1,
+        hindi:80
+    },
+    {
+        rollNo:1,
+        english:80
+    },
+    {
+        rollNo:3,
+        hindi:90,
+    },
+    {
+        rollNo:4,
+        hindi:70,
+        computer:90
+    }
+]
+
+sql          nosql
+database     database
+table        collection
+row          document
+Select       find
+insert       insert
+update       Update
+delete       remove
+
+// local setup
+>>>>Window>>>>>>>
+> download and install mongodb (https://www.mongodb.com/try/download/community)
+> create folder by the name of "data" in c drive
+> inside data folder create folder by the name of "db"
+C:\data\db
+
+>>>>>Mac/linux>>>>>>>
+> download and install mongodb (https://www.mongodb.com/try/download/community)
+> go to root (~)
+> mkdir data/db
+
+
+>>>>>> step to start mongodb server 
+### Window ###
+> open the cmd
+> go inside c/programfile/mongodb/server/5.1/bin
+> type "mongod"
+* start the server on default port 27017
+* do not close this cmd till you are using mongodb
+
+> open new cmd
+> go inside c/programfile/mongodb/server/5.1/bin
+> type "mongo"
+* this will start the mongo client to interact with mongodb
+
+### Mac ###
+> open terminal
+> mongod --dbpath data/db
+* start the server on default port 27017
+* do not close this cmd till you are using mongodb
+
+> open new terminal
+> mongo
+* this will start the mongo client to interact with mongodb
+
+
+// cloud setup
+> https://account.mongodb.com/account/login

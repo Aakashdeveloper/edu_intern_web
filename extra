@@ -223,3 +223,12 @@ Step to install packages
 
 
 > npm i -g nodemon
+
+
+C > Create (insert) (post)
+R > Read   (select) (get)
+U > Update (update) (put)
+D > Delete (remove) (delete)
+
+
+MngoDb

@@ -1,0 +1,67 @@
+* every command should run on client (mongo)
+>>>>To see all databases
+> show dbs
+
+>>>>To create databases
+> use databasename (use augintern)
+
+>>>>To create collections
+> db.user.insert({Name:"Ankit",City:"Delhi",Phone:464655})
+
+>>>>> Go inside existing dbs
+> use augintern
+
+>>>>To see all collections
+show collections
+
+>>>>To see data in collection
+db.user.find()
+
+* Every record have one unique value by the name of _id
+> _id should always have unique values
+> if you will not pass _id it will take as default values
+> else we can also give our own _id value
+> 12 byte
+4bytes > timestamp
+5bytes > random value
+3bytes > counter
+
+db.user.insert({_id:1,"name":"John"})
+db.user.insert({_id:2,"name":"Nikita"})
+db.user.insert({"name":"Bhumika"})
+db.user.insert({"name":"Karan"})
+
+
+
+db.location.insert(
+    [
+  {
+    "location_id": 1,
+    "location_name": "Ashok Vihar Phase 3, New Delhi",
+    "state_id": 1,
+    "state": "Delhi",
+    "country_name": "India"
+  },
+  {
+    "location_id": 4,
+    "location_name": "Bibvewadi, Pune",
+    "state_id": 2,
+    "state": "Maharashtra",
+    "country_name": "India"
+  },
+  {
+    "location_id": 8,
+    "location_name": "Jeevan Bhima Nagar, Bangalore",
+    "state_id": 3,
+    "state": "Karnataka",
+    "country_name": "India"
+  },
+  {
+    "location_id": 13,
+    "location_name": "Sector 40, Chandigarh",
+    "state_id": 4,
+    "state": "Punjab",
+    "country_name": "India"
+  }
+]
+)
