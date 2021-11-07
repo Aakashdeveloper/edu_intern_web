@@ -231,4 +231,11 @@ U > Update (update) (put)
 D > Delete (remove) (delete)
 
 
-MngoDb
+npm i mongodb morgan chalk cors body-parser
+
+/////
+params /
+> params are complusory to define the
+
+queryparams ?
+> no need to define
