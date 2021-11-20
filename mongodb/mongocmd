@@ -33,35 +33,30 @@ db.user.insert({"name":"Karan"})
 
 
 
-db.location.insert(
-    [
-  {
-    "location_id": 1,
-    "location_name": "Ashok Vihar Phase 3, New Delhi",
-    "state_id": 1,
-    "state": "Delhi",
-    "country_name": "India"
-  },
-  {
-    "location_id": 4,
-    "location_name": "Bibvewadi, Pune",
-    "state_id": 2,
-    "state": "Maharashtra",
-    "country_name": "India"
-  },
-  {
-    "location_id": 8,
-    "location_name": "Jeevan Bhima Nagar, Bangalore",
-    "state_id": 3,
-    "state": "Karnataka",
-    "country_name": "India"
-  },
-  {
-    "location_id": 13,
-    "location_name": "Sector 40, Chandigarh",
-    "state_id": 4,
-    "state": "Punjab",
-    "country_name": "India"
-  }
-]
-)
+//////find with conditions
+db.zomato.find({state_id:4}).pretty()
+
+db.zomato.find({state_id:1,location_id:2}).pretty()
+
+db.zomato.find({state_id:1,"mealTypes.mealtype_id":1}).pretty()
+
+db.zomato.count({"mealTypes.mealtype_id":1})
+
+db.zomato.find({cost:{$lt:500}},{restaurant_name:1,cost:1}).pretty()
+
+db.zomato.find({$and:[{cost:{$gt:500,$lt:1000}}]},{restaurant_name:1,cost:1}).pretty()
+
+db.menu.find({"menu_id":{$in:[3,6,43]}}).pretty()
+
+//////Projection//////
+db.zomato.find({condition},{projection})
+
+db.zomato.find({state_id:4},{restaurant_name:1,state_id:1,address:1,_id:0}).pretty()
+
+db.zomato.find({},{restaurant_name:1,address:1,_id:0}).pretty()
+
+
+///////
+db.zomato.find({},{restaurant_name:1,address:1,_id:0}).limit(5).pretty()
+
+db.zomato.find({},{restaurant_name:1,cost:1,_id:0}).limit(5).sort({cost:1}).pretty()

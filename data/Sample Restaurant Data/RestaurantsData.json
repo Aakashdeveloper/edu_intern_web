@@ -1,4 +1,4 @@
-[
+db.zomato.insert([
   {
     "restaurant_id": 1,
     "restaurant_name": "Domino's Pizza",
@@ -516,4 +516,4 @@
       "https://b.zmtcdn.com/data/reviews_photos/c9d/de04206704bc24bf7d4736c7b5dbbc9d_1559392496.jpg"
     ]
   }
-]
+])
