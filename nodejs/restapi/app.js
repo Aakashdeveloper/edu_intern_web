@@ -5,9 +5,13 @@ var mongo = require('mongodb');
 var MongoClient = mongo.MongoClient;
 dotenv.config();
 var mongoUrl = process.env.MongoLiveUrl;
+const bodyParser = require('body-parser')
 var port = process.env.PORT || 8124;
 // save the database connection
 var db;
+
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.json());
 
 // first default route
 app.get('/',(req,res) => {
@@ -106,9 +110,50 @@ app.get('/menu/:restid',(req,res) => {
     })
 })
 
+app.post('/menuItem',(req,res) => {
+    console.log(req.body);
+    db.collection('menu').find({menu_id:{$in:req.body}}).toArray((err,result) => {
+        if(err) throw err;
+        res.send(result)
+    })
+    
+})
+
+app.put('/updateStatus/:id',(req,res) => {
+    var id = Number(req.params.id);
+    var status = req.body.status?req.body.status:"Pending"
+    db.collection('orders').updateOne(
+        {id:id},
+        {
+            $set:{
+                "date":req.body.date,
+                "bank_status":req.body.bank_status,
+                "bank":req.body.bank,
+                "status":status
+            }
+        }
+    )
+    res.send('data updated')
+})
+
 // return all the orders
 app.get('/orders',(req,res) => {
     db.collection('orders').find().toArray((err,result) => {
+        if(err) throw err;
+        res.send(result)
+    })
+})
+
+app.post('/placeOrder',(req,res) => {
+    console.log(req.body);
+    db.collection('orders').insert(req.body,(err,result)=>{
+        if(err) throw err;
+        res.send("order placed")
+    })
+})
+
+app.delete('/deletOrders',(req,res)=>{
+    db.collection('orders').remove({},(err,result) => {
         if(err) throw err;
         res.send(result)
     })

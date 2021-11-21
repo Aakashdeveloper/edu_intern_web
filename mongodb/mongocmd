@@ -60,3 +60,18 @@ db.zomato.find({},{restaurant_name:1,address:1,_id:0}).pretty()
 db.zomato.find({},{restaurant_name:1,address:1,_id:0}).limit(5).pretty()
 
 db.zomato.find({},{restaurant_name:1,cost:1,_id:0}).limit(5).sort({cost:1}).pretty()
+
+////delete////
+db.zomato.remove({})
+
+db.zomato.remove({id:1})
+
+///////update//////
+db.zomato.update(
+    {id:1},
+    {
+        $set:{
+            "status":'Confirm'
+        }
+    }
+)

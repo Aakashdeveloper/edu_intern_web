@@ -30,15 +30,26 @@ Page3(Details Page)
 (return all items of menu for particular restaurant)
 
 Page4(Summary Page)
-> Menu wrt to all ids
+> Menu wrt to all ids (post)> (http://localhost:8122/menuItem)
 (provides item in basis of id)
 
 > Post the order
 (Insert order details in db)
+(http://localhost:8122/placeOrder)
 
 /// update order with payment details
+(http://localhost:8122/updateStatus/1)
+{
+	"status":"Delivered",
+	"date":"2021-08-19%2021:32:37.0",
+	"bank_status":"TXN_SUCCESS",
+	"bank":"Bharat%20Bank"
+}
+
+
 
 /// delete orders
+(http://localhost:8122/deletOrders)
 
 Page5(Order Page)
 > List all the order placed >>>>>>>>>>>>>>>>>>Done
