@@ -20,30 +20,6 @@ app.get('/',(req,res) => {
     res.send("Hiii From Express")
 })
 
-// return all the city
-app.get('/location',(req,res) => {
-    db.collection('location').find().toArray((err,result) => {
-        if(err) throw err;
-        res.send(result)
-    })
-})
-
-// return all the mealType
-app.get('/mealType',(req,res) => {
-    db.collection('mealType').find().toArray((err,result) => {
-        if(err) throw err;
-        res.send(result)
-    })
-})
-
-/*
-// return all the restaurants
-app.get('/restaurants',(req,res) => {
-    db.collection('restaurants').find().toArray((err,result) => {
-        if(err) throw err;
-        res.send(result)
-    })
-})*/
 
 // restaurant wrt to id
 app.get('/restaurant/:id',(req,res) => {
@@ -54,18 +30,7 @@ app.get('/restaurant/:id',(req,res) => {
     })
 })
 
-// query params example
-/// wrt to city_name
-app.get('/restaurants',(req,res) => {
-    var query = {};
-    if(req.query.city){
-        query={state_id:Number(req.query.city)}
-    }
-    db.collection('restaurants').find(query).toArray((err,result) => {
-        if(err) throw err;
-        res.send(result)
-    })
-})
+
 
 // restaurant wrt to mealId
 app.get('/filter/:mealId',(req,res) => {
@@ -108,65 +73,6 @@ app.get('/filter/:mealId',(req,res) => {
         res.send(result) 
     })
 })
-
-// return all the menu
-app.get('/menu/:restid',(req,res) => {
-    var restid = Number(req.params.restid)
-    db.collection('menu').find({restaurant_id:restid}).toArray((err,result) => {
-        if(err) throw err;
-        res.send(result)
-    })
-})
-
-app.post('/menuItem',(req,res) => {
-    console.log(req.body);
-    db.collection('menu').find({menu_id:{$in:req.body}}).toArray((err,result) => {
-        if(err) throw err;
-        res.send(result)
-    })
-    
-})
-
-app.put('/updateStatus/:id',(req,res) => {
-    var id = Number(req.params.id);
-    var status = req.body.status?req.body.status:"Pending"
-    db.collection('orders').updateOne(
-        {id:id},
-        {
-            $set:{
-                "date":req.body.date,
-                "bank_status":req.body.bank_status,
-                "bank":req.body.bank,
-                "status":status
-            }
-        }
-    )
-    res.send('data updated')
-})
-
-// return all the orders
-app.get('/orders',(req,res) => {
-    db.collection('orders').find().toArray((err,result) => {
-        if(err) throw err;
-        res.send(result)
-    })
-})
-
-app.post('/placeOrder',(req,res) => {
-    console.log(req.body);
-    db.collection('orders').insert(req.body,(err,result)=>{
-        if(err) throw err;
-        res.send("order placed")
-    })
-})
-
-app.delete('/deletOrders',(req,res)=>{
-    db.collection('orders').remove({},(err,result) => {
-        if(err) throw err;
-        res.send(result)
-    })
-})
-
 
 // connecting with mongodb
 MongoClient.connect(mongoUrl, (err,client) => {
