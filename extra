@@ -261,3 +261,20 @@ queryparams ?
 npm i packagename --save
 
 https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh
+
+
+React
+> react is a frontend framework that help to
+build single page application using components
+ npm i create-react-app
+create-react-app appname
+
+/// step to generate react app///
+> go inside the folder
+> npx create-react-app appname
+
+//////
+
+react  >>>>> This is the main package
+react-dom >>>>> This package help to bind Js with html
+react-script >>>> This help to run the application

@@ -1,9 +1,9 @@
 Page1(Home Page)
-> List Of City (http://localhost:8121/location)
+> List Of City (https://xomato.herokuapp.com/location)
 (this will return all the city) >>>>>>>>>>>>>>>>>>Done
 > Restaurant wrt to city
 (on the basis city return restaurants) >>>>>>>>>>>>>>>>>>Done
-> List of all meal (http://localhost:8121/mealType)
+> List of all meal (https://xomato.herokuapp.com/mealType)
 (return all the meal types) >>>>>>>>>>>>>>>>>>Done
 
 Page2(Listing Page)
@@ -11,34 +11,34 @@ Page2(Listing Page)
 (this will return all the restaurant of particular meal)
 > Filter
 >> Cuisine Filter >>>>>>>>>>>>>>>>>>Done
-(Search on basis of mealtype and cuisine)(http://localhost:8122/filter/1?cuisine=3)
+(Search on basis of mealtype and cuisine)(https://xomato.herokuapp.com/filter/1?cuisine=3)
 
->> cost Filter (http://localhost:8122/filter/1?lcost=650&hcost=850)
+>> cost Filter (https://xomato.herokuapp.com/filter/1?lcost=650&hcost=850)
 (Search on basis of mealtype and cost)
 
 >> sort filter(http://localhost:8122/filter/1?lcost=500&hcost=2000&sortKey=-1)
 (Price high to low and Low to High)
 
->> Cuisine + Cost(http://localhost:8122/filter/1?lcost=500&hcost=1000&cuisine=2)
+>> Cuisine + Cost(https://xomato.herokuapp.com/filter/1?lcost=500&hcost=1000&cuisine=2)
 ((Search on basis of mealtype and cuisine + cost)
 
 Page3(Details Page)
 > Get the details of restaurant on basis of Id
-(http://localhost:8121/restaurant/12)  >>>>>>>>>>>>>>>>>>Done
+(https://xomato.herokuapp.com/restaurant/12)  >>>>>>>>>>>>>>>>>>Done
 
-> Menu wrt to restaurant (http://localhost:8122/menu/5)
+> Menu wrt to restaurant (https://xomato.herokuapp.com/menu/5)
 (return all items of menu for particular restaurant)
 
 Page4(Summary Page)
-> Menu wrt to all ids (post)> (http://localhost:8122/menuItem)
+> Menu wrt to all ids (post)> (https://xomato.herokuapp.com/menuItem)
 (provides item in basis of id)
 
 > Post the order
 (Insert order details in db)
-(http://localhost:8122/placeOrder)
+(https://xomato.herokuapp.com/placeOrder)
 
 /// update order with payment details
-(http://localhost:8122/updateStatus/1)
+(https://xomato.herokuapp.com/updateStatus/1)
 {
 	"status":"Delivered",
 	"date":"2021-08-19%2021:32:37.0",
@@ -49,8 +49,8 @@ Page4(Summary Page)
 
 
 /// delete orders
-(http://localhost:8122/deletOrders)
+(https://xomato.herokuapp.com/deletOrders)
 
 Page5(Order Page)
 > List all the order placed >>>>>>>>>>>>>>>>>>Done
-(http://localhost:8121/orders)
+(https://xomato.herokuapp.com/orders)

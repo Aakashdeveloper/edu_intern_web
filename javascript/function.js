@@ -49,3 +49,12 @@ var add = (a) => { return a+b }
 function test(){
     return
 }
+
+
+function add(a,b){
+    var out = [a,b]
+    return out
+}
+
+add(1,2)
+[1,2]
