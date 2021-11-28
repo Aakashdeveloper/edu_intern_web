@@ -278,3 +278,15 @@ create-react-app appname
 react  >>>>> This is the main package
 react-dom >>>>> This package help to bind Js with html
 react-script >>>> This help to run the application
+
+functional component
+>>> dumb component
+>>> only use for displaying
+>>> we cannot maintain the state and cannot all api
+
+class component
+>>> logical components
+>>> we can call api, maintain state as well as displaying
+>>> heavy as compare to functional components
+
+HookComponent

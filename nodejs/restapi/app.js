@@ -22,7 +22,7 @@ app.get('/',(req,res) => {
 
 // return all the city
 app.get('/location',(req,res) => {
-    db.collection('location').find().toArray((err,result) => {
+    db.collection('location').find({},{projection: { _id: 0 }}).toArray((err,result) => {
         if(err) throw err;
         res.send(result)
     })
