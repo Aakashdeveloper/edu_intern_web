@@ -110,7 +110,7 @@ a.indexOf('Delhi')
 a.indexOf('Amsterdam')
 5
 
-a.indexOf('Helsinki')
+a.indexOf('                                                 ')
 -1
 
 a.indexOf('Pune')

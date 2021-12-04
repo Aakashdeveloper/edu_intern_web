@@ -290,3 +290,28 @@ class component
 >>> heavy as compare to functional components
 
 HookComponent
+
+//////////
+State
+> state act like a local variables
+> every component have its own state
+> scope of state will be in same component
+> we can update the value of state(mutable)
+> Any data interaction should happen through state only
+
+props
+> Help to transfer data between components
+> We can transfer data only between the nested component
+> We cannot update the value of props(immutable)
+
+
+parent > child (props)
+child > parent (props with function)
+
+// parent
+function add(a,b){
+    return a+b
+}
+
+// child
+add(1,2)

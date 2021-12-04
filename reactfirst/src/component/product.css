@@ -1,0 +1,14 @@
+.card{
+    height:400px;
+    width:25%;
+    margin-left: 5%;
+    margin-top: 5%;
+    box-shadow:10px 10px 20px gray;
+    float: left;
+}
+
+.cardImage{
+    height: 182px;
+    width: 61%;
+    margin-left:20%
+}
