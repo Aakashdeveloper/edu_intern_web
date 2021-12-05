@@ -315,3 +315,13 @@ function add(a,b){
 
 // child
 add(1,2)
+
+npm i react-router-dom@5.3.0 
+
+params /
+queryparams ?
+
+////Default Props///
+History > For redireaction
+Location > for queryparams
+Match > for params
