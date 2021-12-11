@@ -15,7 +15,7 @@ class Home extends Component{
         }
     }
 
-    Wait
+    
 
     filterProduct = (userText) => {
         const output = this.state.products.filter((data) => {

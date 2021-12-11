@@ -1,14 +1,18 @@
 Page1(Home Page)
 > List Of City (https://xomato.herokuapp.com/location)
 (this will return all the city) >>>>>>>>>>>>>>>>>>Done
-> Restaurant wrt to city
+
+> Restaurant wrt to city(https://xomato.herokuapp.com/restaurants?city=1)
 (on the basis city return restaurants) >>>>>>>>>>>>>>>>>>Done
+
 > List of all meal (https://xomato.herokuapp.com/mealType)
 (return all the meal types) >>>>>>>>>>>>>>>>>>Done
 
 Page2(Listing Page)
 > Find Restaurant on the basis mealType  >>>>>>>>>>>>>>>>>>Done
 (this will return all the restaurant of particular meal)
+(https://xomato.herokuapp.com/filter/mealID)
+
 > Filter
 >> Cuisine Filter >>>>>>>>>>>>>>>>>>Done
 (Search on basis of mealtype and cuisine)(https://xomato.herokuapp.com/filter/1?cuisine=3)

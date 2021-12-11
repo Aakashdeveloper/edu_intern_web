@@ -7,14 +7,14 @@ const Header = () => {
         <>
         <div id="header">
                 <div id="brand">
-                    <span>EduMato</span>
+                    <Link to="/">EduMato</Link>
                 </div>
                 <div className="social">
                     <a href="www.facebook.com">
-                        <img src="images/facebook.png" className="socialIcon"/>
+                        <img src="https://i.ibb.co/wyH9JxS/facebook.png" className="socialIcon"/>
                     </a>
                     <a href="www.instagram.com">
-                        <img src="images/insta.png" className="socialIcon"/>
+                        <img src="https://i.ibb.co/w0kZ5Hf/insta.png" className="socialIcon"/>
                     </a>
                 </div>
             </div>

@@ -1,18 +1,41 @@
-import React from 'react';
+import React,{Component} from 'react';
+import QuickDisplay from './QuickDisplay';
+import './QuickSearch.css';
 
-const QuickSearch = () => {
-    return(
-        <div className="panel panel-success">
-            <div className="panel-heading">
-                <h2>Home Page</h2>
+const url = "https://xomato.herokuapp.com/mealType";
+
+class QuickSearch extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state={
+            MealType:''
+        }
+    }
+
+    render(){
+        return(
+            <div id="QuickSearch">
+                <span id="QuickHeading">
+                    Quick Searches
+                </span>
+                <span id="QuickSubHeading">
+                    Discover Restaurants By Type
+                </span>
+                <QuickDisplay quickData={this.state.MealType}/>
             </div>
-            <div className="panel-body">
-                <p>
-                    Home is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets 
-                </p>
-            </div>
-        </div>
-    )
+        )
+    }
+
+    //api call 
+    componentDidMount(){
+        fetch(url, {method:'GET'})
+        .then((res) => res.json())
+        .then((data) => {
+            this.setState({MealType:data})
+        })
+    }
+    
 }
 
 export default QuickSearch;
