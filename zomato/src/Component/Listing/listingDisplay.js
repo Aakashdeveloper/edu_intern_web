@@ -10,7 +10,7 @@ const ListingDisplay = (props) => {
                     <div class="cardContainer">
                             <div class="component1">
                                 <img src={item.restaurant_thumb} alt={item.restaurant_name}/>
-                                <Link class="btn btn-danger" to="/">
+                                <Link class="btn btn-danger" to={`/details/${item.restaurant_id}`}>
                                     Proceed
                                 </Link>
                             </div>

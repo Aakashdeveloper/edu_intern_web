@@ -1,0 +1,91 @@
+
+#header{
+    height:60px;
+    background-color:#d2a08c
+}
+/* css for logo*/
+#icon{
+    font-size:30px;
+    color:#13648c;
+    margin-left: 1%;
+    margin-top: 0%;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 5px;
+}
+#nav{
+    float: left;
+    margin-left: 20%;
+}
+#social{
+    float: right;
+    margin-right: 1%;
+}
+a{
+    text-decoration: none
+}
+.slogo{
+    height:50px;
+    width:50px;
+}
+
+#content{
+    width: 90%;
+    height: 500px;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+#imgDiv{
+    width: 45%;
+    height: 420px;
+    margin-top: 3%;
+    margin-left: 2%;
+    float: left;
+}
+
+#imgDiv>img{
+    width: 100%;
+    height: 100%;
+}
+
+#textDiv{
+    width: 48%;
+    height: 500px;
+    margin-top: 1%;
+    margin-left: 2%;
+    float: left;
+}
+
+.checked{
+    color:green;
+}
+
+.icon{
+    display: inline-block;
+    margin-left:2%
+}
+
+.stock{
+    font-size: 33px;
+    color:green
+}
+.btn{
+    height: 40px;
+    width: 200px;
+    font-size:20px
+}
+
+.btn-checkout{
+    background-color:rgb(52, 201, 52);
+    color:white
+}
+
+.btn-atc{
+    background-color:rgb(243, 62, 62);
+    color:white
+}
+.cartBtn{
+    width:50px;
+    margin-left:0%;
+}
