@@ -1,0 +1,77 @@
+body{
+    margin: auto;
+    background-color:#eeded8 ;
+}
+
+.heading{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#main{
+    width:80%;
+    height: 800px;
+    margin-left: 10%;
+}
+
+.filter{
+    width:20%;
+    border: 2px solid orange;
+    height: 600px;
+    float: left;
+}
+
+.content{
+    width:74%;
+    margin-left: 5%;
+    float: left;
+    margin-top: -2%;
+}
+
+.cardContainer{
+    width:100%;
+    box-shadow: 10px 20px 10px gray;
+    margin-top: 2%;
+    height: 300px;
+    border: 2px solid rgb(116, 112, 112);
+}
+.component1{
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+.component1>img{
+    width: 100%;
+    height: 230px;
+    padding: 3%;
+    padding-top: 5%;
+    border-radius: 34%;
+}
+.component2{
+    width: 52%;
+    margin-left: 4%;
+    height: 100%;
+    float: left;
+}
+.label{
+    height: 20px;
+    width: 73px;
+    padding: 2%;
+    font-size: 18px;
+}
+.btn-danger{
+    width: 34%;
+    height: 45px;
+    margin-top: 2%;
+    background: #b0385f;
+    color: white;
+    font-size: 20px;
+    margin-left: 31%;
+    position: relative;
+}
+
+
+.cuisine_type{
+    margin-top: 6%;
+}
