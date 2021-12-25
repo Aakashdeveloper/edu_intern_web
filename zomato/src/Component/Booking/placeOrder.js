@@ -10,7 +10,7 @@ class PlaceOrder extends Component {
 
         this.state={
             id:Math.floor(Math.random()*100000),
-            hotel_name:this.props.match.params.restName,
+            rest_name:this.props.match.params.restName,
             name:'Aakash',
             phone:'987654324',
             email:'aakash@gmail.com',
@@ -34,7 +34,8 @@ class PlaceOrder extends Component {
             },
             body:JSON.stringify(this.state)
         })
-        .then(this.props.history.push('/viewBooking'))
+        //.then(this.props.history.push('/viewBooking'))
+        .then(console.log('going for payment'))
     }
     renderItems = (data) => {
         if(data){
@@ -61,6 +62,7 @@ class PlaceOrder extends Component {
                         Place Order
                     </div>
                     <div className="panel-body">
+                        <form action="http://localhost:4100/paynow" method="POST">
                         <div className="row">
                             <div className="col-md-12">
                                 <div className="col-md-6">
@@ -95,16 +97,18 @@ class PlaceOrder extends Component {
                             {this.renderItems(this.state.menuItems)}
                             <input type="hidden" name="cost" value={this.state.cost}/>
                             <input type="hidden" name="id" value={this.state.id}/>
-                            <input type="hidden" name="hotel_name" value={this.state.hotel_name}/>
+                            <input type="hidden" name="rest_name" value={this.state.rest_name}/>
                             <div className="row">
                                 <div className="col-md-12">
                                     <h2>Total Cost is Rs.{this.state.cost}</h2>
                                 </div>
                             </div>
-                            <button className="btn btn-success" onClick={this.handleSubmit}>
+                            <button className="btn btn-success" type="submit" onClick={this.handleSubmit}
+                            >
                                 Place order
                             </button>
                         </div>
+                        </form>
                     </div>
                 </div>
             </div>

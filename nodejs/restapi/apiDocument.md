@@ -20,7 +20,7 @@ Page2(Listing Page)
 >> cost Filter (https://xomato.herokuapp.com/filter/1?lcost=650&hcost=850)
 (Search on basis of mealtype and cost)
 
->> sort filter(http://localhost:8122/filter/1?lcost=500&hcost=2000&sortKey=-1)
+>> sort filter(http://xomato.herokuapp.com/filter/1?lcost=500&hcost=2000&sortKey=-1)
 (Price high to low and Low to High)
 
 >> Cuisine + Cost(https://xomato.herokuapp.com/filter/1?lcost=500&hcost=1000&cuisine=2)
