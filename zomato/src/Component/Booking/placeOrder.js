@@ -62,7 +62,7 @@ class PlaceOrder extends Component {
                         Place Order
                     </div>
                     <div className="panel-body">
-                        <form action="http://localhost:4100/paynow" method="POST">
+                        <form action="http://zompay.herokuapp.com/paynow" method="POST">
                         <div className="row">
                             <div className="col-md-12">
                                 <div className="col-md-6">
@@ -95,15 +95,16 @@ class PlaceOrder extends Component {
                                 </div>
                             </div>
                             {this.renderItems(this.state.menuItems)}
-                            <input type="hidden" name="cost" value={this.state.cost}/>
+                            <input type="hidden" name="amount" value={this.state.cost}/>
                             <input type="hidden" name="id" value={this.state.id}/>
-                            <input type="hidden" name="rest_name" value={this.state.rest_name}/>
+                            <input type="hidden" name="hotel_name" value={this.state.rest_name}/>
                             <div className="row">
                                 <div className="col-md-12">
                                     <h2>Total Cost is Rs.{this.state.cost}</h2>
                                 </div>
                             </div>
-                            <button className="btn btn-success" type="submit" onClick={this.handleSubmit}
+                            <button className="btn btn-success"  onClick={this.handleSubmit}
+                            type="submit"
                             >
                                 Place order
                             </button>

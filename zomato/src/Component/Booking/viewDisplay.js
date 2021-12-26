@@ -7,7 +7,7 @@ function ViewDisplay(props){
                 return(
                     <tr key={item.id}>
                         <td>{item.id}</td>
-                        <td>{item.hotel_name}</td>
+                        <td>{item.rest_name}</td>
                         <td>{item.name}</td>
                         <td>{item.phone}</td>
                         <td>{item.email}</td>
