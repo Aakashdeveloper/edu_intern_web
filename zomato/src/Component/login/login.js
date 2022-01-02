@@ -32,6 +32,7 @@ class Login extends Component {
                 this.setState({message:data.token});
             }else{
                 localStorage.setItem('ltk',data.token)
+                
                 this.props.history.push('/')
             }
         })
