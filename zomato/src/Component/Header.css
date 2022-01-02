@@ -7,18 +7,22 @@ body{
     background-color: #d1a292;
 }
 #brand{
-    display: inline-block;
+    float:left;
     margin-left:5%;
     font-size:30px;
     color:white;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .social{
-    display: inline-block;
-    margin-left:75%
+    float:right;
+    margin-right:10%
 }
 
 .socialIcon{
     height:50px;
     width:50px
+}
+
+.btn{
+    width:100px !important
 }

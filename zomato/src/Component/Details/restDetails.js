@@ -4,6 +4,7 @@ import axios from 'axios';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import MenuList from './menuDisplay';
+import Header from '../Header';
 
 const url = "https://xomato.herokuapp.com/restaurant"
 const menuUrl = "https://xomato.herokuapp.com/menu"
@@ -29,6 +30,8 @@ class Details extends Component {
         //let details = this.state.details
         let {details} = this.state
         return(
+            <>
+            <Header/>
             <div className="main">
             <div id="content">
                 <div id="imgDiv">
@@ -92,6 +95,7 @@ class Details extends Component {
                 </Tabs>
             </div>
         </div>
+        </>
         )
     }
 

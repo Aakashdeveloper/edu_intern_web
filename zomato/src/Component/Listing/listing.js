@@ -5,6 +5,7 @@ import axios from 'axios';
 import CuisineFilter from '../Filter/cusineFilter';
 import CostFilter from '../Filter/costFilter';
 import SortFilter from '../Filter/sortFilter'
+import Header from '../Header';
 
 const url = "https://xomato.herokuapp.com/filter";
 
@@ -24,6 +25,7 @@ class Listing extends Component {
     render(){
         return(
             <>
+            <Header/>
             <p class="heading">Listing Page</p>
             <div id="main">
                 <div class="filter">

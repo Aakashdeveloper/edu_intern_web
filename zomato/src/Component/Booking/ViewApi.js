@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import axios from 'axios';
-import ViewDisplay from './viewDisplay'
+import ViewDisplay from './viewDisplay';
+import Header from '../Header';
 
 const url = "https://xomato.herokuapp.com/orders";
 const putUrl = "https://xomato.herokuapp.com/updateStatus"
@@ -16,8 +17,19 @@ class ViewApi extends Component{
     }
 
     render(){
+        if(localStorage.getItem('ltk') == null){
+            return(
+                <>
+                <Header/>
+                <h2>Login First to See Booking</h2>
+                </>
+            )
+        }
         return(
+            <>
+            <Header/>
             <ViewDisplay bookData={this.state.orders}/>
+            </>
         )
     }
 
@@ -47,6 +59,8 @@ class ViewApi extends Component{
             }
         }
         axios.get(url).then((res) => {this.setState({orders:res.data})})
+        //axios.get(`${url}?email=${localStorage.getItem('userdata').split(',')[1]}`).then((res) => {this.setState({orders:res.data})})
+    
     }
 }
 

@@ -1,5 +1,7 @@
 import React,{Component} from 'react';
 import './placeOrder.css'
+import Header from '../Header';
+import {Link} from 'react-router-dom'
 
 const menuUrl = "https://xomato.herokuapp.com/menuItem";
 const placeOrder = "https://xomato.herokuapp.com/placeOrder"
@@ -11,9 +13,9 @@ class PlaceOrder extends Component {
         this.state={
             id:Math.floor(Math.random()*100000),
             rest_name:this.props.match.params.restName,
-            name:'Aakash',
-            phone:'987654324',
-            email:'aakash@gmail.com',
+            name:localStorage.getItem('userdata')?localStorage.getItem('userdata').split(',')[0]:'',
+            phone:localStorage.getItem('userdata')?localStorage.getItem('userdata').split(',')[2]:'',
+            email:localStorage.getItem('userdata')?localStorage.getItem('userdata').split(',')[1]:'',
             cost:0,
             address:'Hno123',
             menuItems:''
@@ -54,7 +56,19 @@ class PlaceOrder extends Component {
         this.setState({[event.target.name]:event.target.value})
     }
     render(){
+        if(localStorage.getItem('ltk') == null){
+            return(
+                <>
+                <Header/>
+                <h2>Login First to Place Booking</h2>
+                </>
+            )
+           
+
+        }
         return(
+            <>
+            <Header/>
             <div className="container">
                 <br/>
                 <div className="panel panel-primary">
@@ -113,6 +127,7 @@ class PlaceOrder extends Component {
                     </div>
                 </div>
             </div>
+            </>
         )
     }
 
